@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".ActivityLogin"
+    android:background="#4A47A7">
 
     <EditText
         android:id="@+id/ETemail"
@@ -14,7 +15,8 @@
         android:layout_margin="15dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:textColor="@android:color/black"/>
 
     <EditText
         android:id="@+id/ETpassword"
@@ -24,7 +26,8 @@
         android:hint="Password"
         android:inputType="numberPassword"
         tools:ignore="MissingConstraints"
-        android:layout_below="@id/ETemail"/>
+        android:layout_below="@id/ETemail"
+        android:textColor="@android:color/black"/>
 
     <Button
         android:id="@+id/btnSignUp"
@@ -33,7 +36,8 @@
         android:layout_margin="15dp"
         android:text="Sign Up"
         tools:ignore="MissingConstraints"
-        android:layout_below="@id/ETpassword" />
+        android:layout_below="@id/ETpassword"
+        android:background="#FFF"/>
 
     <TextView
         android:id="@+id/TVSignIn"
@@ -43,6 +47,7 @@
         android:text="Already have an account? Sign in Here"
         android:textSize="20dp"
         tools:ignore="MissingConstraints"
-        android:layout_below="@id/btnSignUp" />
+        android:layout_below="@id/btnSignUp"
+        android:textColor="@android:color/black"/>
 
 </RelativeLayout>
