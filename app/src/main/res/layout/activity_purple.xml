@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:orientation="vertical"
-    android:background="@color/colorAccent"
+    android:background="@color/purple"
     tools:context=".UserActivity2">
 
 
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
-        android:text="VDR"
+        android:text="Info"
         android:textColor="#FFF"
         android:textSize="24sp" />
 

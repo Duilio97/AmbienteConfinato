@@ -10,18 +10,18 @@ import android.widget.LinearLayout;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Red extends AppCompatActivity {
+public class Purple extends AppCompatActivity {
     Button btnLogOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_red);
+        setContentView(R.layout.activity_purple);
         btnLogOut = (Button) findViewById(R.id.btnLogOut);
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent I = new Intent(Red.this, UserActivity2.class);
+                Intent I = new Intent(Purple.this, UserActivity2.class);
                 startActivity(I);
 
             }
