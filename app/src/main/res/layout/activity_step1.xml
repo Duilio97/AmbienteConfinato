@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    tools:context=".UserActivity2">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Name"
+        android:textColor="#FFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/textView"
+        android:hint="Item Value"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textSize="30dp" />
+
+
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipe_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="16dp"
+        app:button_bottom_padding="16dp"
+        app:button_image_disabled="@drawable/ic_baseline_adjust_24"
+        app:button_image_enabled="@drawable/ic_baseline_album_24"
+        app:button_left_padding="15dp"
+        app:button_right_padding="15dp"
+        app:button_top_padding="15dp"
+        app:inner_text="swipe"
+        app:inner_text_bottom_padding="15dp"
+        app:inner_text_size="20sp"
+        app:inner_text_top_padding="15dp" />
+
+</RelativeLayout>

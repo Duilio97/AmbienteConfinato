@@ -6,6 +6,11 @@
     <color name="purple">#4A47A7</color>
     <color name="yellow">#FFD386</color>
     <color name="navy">#3262A1</color>
+    <color name="green">#3CA140</color>
+    <color name="yel">#D8DF0B</color>
+    <color name="orange">#F36305</color>
+    <color name="red">#E40909</color>
+    <color name="sky">#00CCFF</color>
 
     FFD386
 </resources>

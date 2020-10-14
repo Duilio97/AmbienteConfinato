@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:text="Ambiente Confinato"
         android:textColor="#FFF"
         android:textSize="24sp" />
@@ -71,7 +71,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="12dp"
                         android:layout_marginBottom="18dp"
-                        android:src="@drawable/house"
+                        android:src="@drawable/ic_baseline_assessment_24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -105,7 +105,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="12dp"
                         android:layout_marginBottom="18dp"
-                        android:src="@drawable/pluspro"
+                        android:src="@drawable/ic_baseline_nfc_242"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -151,7 +151,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="12dp"
                         android:layout_marginBottom="18dp"
-                        android:src="@drawable/checked"
+                        android:src="@drawable/ic_baseline_check_circle_24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -185,7 +185,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="12dp"
                         android:layout_marginBottom="18dp"
-                        android:src="@drawable/film"
+                        android:src="@drawable/ic_baseline_info_24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
