@@ -8,22 +8,14 @@
     tools:context=".ActivityLogin"
     android:background="#4A47A7">
 
-    <EditText
-        android:id="@+id/ETemail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        tools:ignore="MissingConstraints"
-        android:textColor="@android:color/black"/>
+
 
     <EditText
         android:id="@+id/ETpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:hint="Password"
+        android:hint="Registration code"
         android:inputType="textPassword"
         tools:ignore="MissingConstraints"
         android:layout_below="@id/ETemail"
@@ -38,16 +30,4 @@
         tools:ignore="MissingConstraints"
         android:layout_below="@id/ETpassword"
         android:background="#FFF"/>
-
-    <TextView
-        android:id="@+id/TVSignIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="Already have an account? Sign in Here"
-        android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        android:layout_below="@id/btnSignUp"
-        android:textColor="@android:color/black"/>
-
 </RelativeLayout>

@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -16,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.ArrayList;
 
@@ -30,9 +32,23 @@ public class UserActivity2 extends AppCompatActivity {
     private ArrayList<String> stepaPassed = new ArrayList<>();
     public String done;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FirebaseMessaging.getInstance().subscribeToTopic("pushNotifications");
+        FirebaseMessaging.getInstance().subscribeToTopic("pushNotifications")
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        String msg = "subscribed";
+                        if (!task.isSuccessful()) {
+                            msg = "subscribed";
+                        }
+                        Log.d("subscribe:", msg);
+                        Toast.makeText(UserActivity2.this, msg, Toast.LENGTH_SHORT).show();
+                    }
+                });
         final FirebaseFirestore db = FirebaseFirestore.getInstance();
         setContentView(R.layout.activity_user);
         btnLogOut = (Button) findViewById(R.id.btnLogOut);
